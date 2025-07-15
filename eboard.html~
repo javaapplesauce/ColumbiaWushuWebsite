@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Columbia Wushu || Columbia University</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/pix.css" rel=stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://www.columbiawushu.com" />
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span class="light" style="color:#1f8aff;">Columbia</span> Wushu
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+     
+	<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                          <li><a class="page-scroll" href="index.html#about">Our club</a></li>
+                                          <li><a class="page-scroll" href="index.html#practices">Practices</a></li>
+                                        </ul>
+                    </li> 
+                    <!--<li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">24th Annual Wushu Collegiates <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+				          <li><a href="col2020.html">General Information</a></li>
+				          <li><a href="http://collegiatewushu.org/tournament/info.php#tournament" target="_blank">Registration</a></li>
+				        </ul>
+
+                    </li>--> 
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                          <li><a href="eboard.html">Our Members</a></li>
+                                          <li><a href="contact.html">Email</a></li>
+                                        </ul>
+                    </li>
+                </ul>
+            </div>
+ 
+	  <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="collegiates container">
+        <div class="row">
+	        <div class="col-lg-10 col-lg-offset-1" style="margin-top:100px;">
+		<h1>Our Coaches:</h1>             
+	</div>
+     	<!--<h3>Fred Francoeur</h3>
+            </div>
+            <div class="col-lg-7 col-lg-offset-1"><p>Fred started wushu at Columbia in 2010.
+He now trains under Sifu Chen Ying. </p></div>
+            <div class="col-lg-2 col-lg-offset-1"><img id="fred" src="img/fred_franceour.jpg" width="140%"></div>
+	-->      	
+	<div class = "col-lg-10 col-lg-offset-1" >
+		<h3>Tim Wang</h3>
+	</div>
+	<div class ="col-lg-7 col-lg-offset-1"><p>Tim Wang began wushu at Columbia in 2013. Tim represented the U.S. at the 2019 Pan-American Wushu Championships, where he won gold in both Double Broadsword and Xingyi Fist. He has been fortunate to train under Brian Wang, O-mei Wushu, and the Anhui Provincial Wushu Team. Tim graduated Columbia College in 2017 and is currently enrolled in Columbia Law School.</p></div>	
+ 	 <div class = "col-lg-2 col-lg-offset-1"><img src = "img/tim_wang_new.jpg" width = "120%"></div>
+
+	</div>
+        <div class="row">
+	        <div class="col-lg-10 col-lg-offset-1">
+	        	<h1>Our E-Board:</h1>
+		</div>
+	        <div class="col-lg-10 col-lg-offset-1">
+	        	<h3>Shuhan Zhang, President</h3>
+		</div>
+		<div class="col-lg-7 col-lg-offset-1">
+		<p>Federick is a Senior studying Computer Science in SEAS, dragged into wushu by an attraction to shiny things and one enthusiastic eboard member. Not to toot his horn or anything, but he plays a mean trombone.♪♪)>ш=(^。^ ) He is also member of Columbia Pops. His only but highly significant flaw is that he does not enjoy the hit series Cyberchase.</p></div>
+
+	        <div class="col-lg-2 col-lg-offset-1"><img src="img/FederalReserve.jpg" width="120%"></div>
+		<div class="col-lg-10 col-lg-offset-1">
+			<h3>Jordan Choi, Vice President</h3>
+		</div>
+		<div class="col-lg-7 col-lg-offset-1">
+		<p>Angela is a Senior at Barnard studying comparative literature and art history, which is a lot more pretentious than it sounds... Okay, it's exactly as pretentious as it sounds. As suggested by her field of study, she enjoys writing poetry, reading doorstoppers, and making lots and lots of digital art, as well as watching copious amounts of YouTube and listening to copious amounts of podcasts and kpop. Before wushu, she had very much lived a sedentary lifestyle (with a table tennis or dancing interlude here or there), but since joining in her sophomore year, she has enjoyed moving around very much. ᕙ(`▿´)ᕗ</p></div>	        	
+		<div class="col-lg-2 col-lg-offset-1"><img src="img/angela.jpeg" style="padding-bottom: 4vh;" width="120%"></div>	        
+
+	        <div class="col-lg-10 col-lg-offset-1">
+			<h3>Claire Sun, Treasurer</h3>
+		</div>
+		<div class="col-lg-7 col-lg-offset-1">
+		<p>Justin is a Senior studying Computer Science in SEAS. He is also a member of the Asian American Alliance. In his spare time, he enjoys editing photos of wushu members to create memes. Even though his glasses fly off of his face when practicing nandu, you can be sure that he's checking every inch of wushu paperwork closely! ಠ_ರೃ </p></div>	        	
+		<div class="col-lg-2 col-lg-offset-1"><img src="img/justin_chen.jpg" style="padding-bottom: 4vh;" width="120%"></div>		 
+		<div class="col-lg-10 col-lg-offset-1">
+	        	<h3>Embyr Williams, Secretary</h3>
+	        </div>
+	        <div class="col-lg-7 col-lg-offset-1"><p>Miranda is a Senior in Columbia College studying Biological Sciences. Her main goal in life is to climb tall peaks and do some epic wushu at the top. And to become a physician-scientist, maybe walk on Mars. But, you know, one step at a time!!</p></div>
+	        <div class="col-lg-2 col-lg-offset-1"><img src="img/miranda.jpg" style="padding-bottom: 8vh;" width="120%"></div>
+		<div class="col-lg-10 col-lg-offset-1">
+	        	<h3>Maddy Chen, Beginner Liason</h3>
+	        </div>
+	        <div class="col-lg-7 col-lg-offset-1"><p>Shuhan Zhang is a Junior studying Physics in CC. Growing up in China, she has been attracted by Wushu from Wuxia novels and TV series, so she was very glad to start learning Wushu in the supportive community of CU Wushu. In her spare time, she enjoys reading novels, watching Wushu videos, and writing science fiction.</p></div>
+	        <div class="col-lg-2 col-lg-offset-1"><img src="img/shuhan.jpeg" width="120%"></div>
+    </header>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <small>Copyright &copy; Columbia Wushu 2015</small><br>
+            <small>Built using Twitter Bootstrap with credits to <a href="http://ohho-design.com/">OHHODESIGN</a></small>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/hovering.js" type="text/javascript"></script>
+
+    <!--  Bootstrap Core JavaScript -->
+  
+  <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
