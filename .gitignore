@@ -1,0 +1,7 @@
+# ignore Node modules
+node_modules/
+# ignore local env files
+.env
+# ignore build outputs if you generate into dist/
+dist/
+
