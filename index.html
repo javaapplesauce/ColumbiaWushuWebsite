@@ -109,9 +109,44 @@
     </section>
 
 	<!-- Img Section -->
-    <section class="text-center content-section" id="terp">
+    <!-- <section class="text-center content-section" id="terp">
     	<img src="img/rebel_rebs2.jpg" width="80%">
+    </section> -->
+
+    <!-- Img Section -->
+    <section id="terp" class="text-center content-section">
+    <div id="terpCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+        <li data-target="#terpCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#terpCarousel" data-slide-to="1"></li>
+        <!-- add more <li> for additional slides -->
+        </ol>
+
+        <!-- Slides -->
+        <div class="carousel-inner mx-auto d-block" role="listbox">
+        <div class="item active">
+            <img src="img/rebel_rebs2.jpg" alt="Practice Photo" style="width:100%;">
+        </div>
+        <div class="item text-center">
+            <img src="img/rebel_rebs.jpg" alt="Performance Photo" style="width:100%;">
+        </div>
+
+        <!-- add more .item blocks as needed -->
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#terpCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#terpCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
     </section>
+
 
 	<!-- Contact Section -->
     <section id="practices" class="container content-section text-center">
