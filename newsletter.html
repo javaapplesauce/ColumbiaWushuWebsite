@@ -60,6 +60,32 @@
       .event-img {width:100%; max-width:none; margin-top:1.2rem;}
     }
 
+    .letter-hero {
+        /* Full height of the visible area */
+        min-height: 100vh;
+    
+        /* Flexbox centers the inner .container both ways */
+        display: flex;
+        flex-direction: column;          /* keep text stacking top-to-bottom */
+        justify-content: center;         /* vertical centering */
+        align-items: center;             /* horizontal centering */
+    
+        /* Keep your original colours */
+        background: #000;
+        color: #fff;
+        text-align: center;
+    
+        /* Small horizontal breathing room */
+        padding-inline: 1rem;
+    }
+
+    @media (min-width: 0) {
+        .letter-hero {
+            /* change 64px if your nav is taller / shorter */
+            min-height: calc(100vh - 50px);
+        }
+    }
+
   </style>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -115,7 +141,7 @@
     </nav>
 
   <!-- Hero -->
-  <header class="fade-in-section" style="text-align:center; padding:60rem 1rem 60rem; background:#000; color:#fff;">
+  <header class="letter-hero fade-in-section">
     <div class="container">
       <h1 style="font-size:2.6rem; margin-bottom:1rem;">Spring '25 Newsletter</h1>
       <p class="lead" style="max-width:600px; margin:0 auto 1rem;">Honored friends and family members,we hope you had as tantalizing andpacked a semester as we did! Please enjoy this recap of our Spring full of practices, performances, competitions and socials. Thank you all for being a part of our Wushu family and we look forward to seeing you all again in the Fall!</p>
