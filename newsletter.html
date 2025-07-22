@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Columbia University Wushu Newsletter – Spring 2025 recap and highlights">
   <meta name="author" content="Columbia Wushu E‑board 2025‑26">
-  <title>Columbia Wushu | Spring ’25 Newsletter</title>
+
+  <title>Columbia Wushu | Spring '25 Newsletter</title>
 
   <!-- Bootstrap / Theme -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +20,13 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="canonical" href="https://www.columbiawushu.org/newsletter.html" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
   <!-- Timeline + Fade styles -->
   <style>
@@ -56,28 +64,55 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i></button>
-        <a class="navbar-brand" href="index.html"><span class="light" style="color:#1f8aff;">Columbia</span>&nbsp;Wushu</a>
-      </div>
-      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-        <ul class="nav navbar-nav">
-          <li class="hidden"><a href="#page-top"></a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
-            <ul class="dropdown-menu"><li><a class="page-scroll" href="#about">Our club</a></li><li><a class="page-scroll" href="#practices">Practices</a></li><li><a class="page-scroll" href="#performances">Performances</a></li></ul>
-          </li>
-          <li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Newsletters <span class="caret"></span></a>
-            <ul class="dropdown-menu"><li><a href="col2020.html">General Info</a></li><li><a href="https://collegiatewushu.org/tournament/info.php#tournament" target="_blank">Registration</a></li></ul>
-          </li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us <span class="caret"></span></a>
-            <ul class="dropdown-menu"><li><a href="eboard.html">Our Members</a></li><li><a href="contact.html">Email</a></li></ul></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <span class="light" style="color:#1f8aff;">Columbia</span> Wushu
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li><a class="page-scroll" href="index.html#about">Our club</a></li>
+                        <li><a class="page-scroll" href="index.html#practices">Practices</a></li>
+                        <li><a class="page-scroll" href="index.html#performances">Performances</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Newsletters <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="newsletter.html">Spring '25</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="eboard.html">Our Members</a></li>
+                            <li><a href="contact.html">Email</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
   <!-- Hero -->
   <header class="fade-in-section" style="text-align:center; padding:60rem 1rem 60rem; background:#000; color:#fff;">
@@ -162,5 +197,18 @@
       faders.forEach(el=>obs.observe(el));
     });
   </script>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="js/grayscale.js"></script>
+
 </body>
 </html>
