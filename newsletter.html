@@ -2,37 +2,104 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Columbia University Wushu Newsletter – Spring 2025 recap and highlights">
+    <meta name="author" content="Columbia Wushu E‑board 2025‑26">
 
-    <title>Columbia Wushu || Columbia University</title>
+    <title>Columbia Wushu | Spring ’25 Newsletter</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Existing Theme CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
+    <!-- Fonts & Icons -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="http://www.columbiawushu.org" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.columbiawushu.org/newsletter.html" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- ✨ Newsletter‑specific styles (fade‑in + timeline) -->
+    <style>
+      :root {
+        --timeline-line: #d0d0d0;
+        --timeline-dot: #ffffff;
+        --brand-blue: #1f8aff; /* matches existing site palette */
+      }
+
+      /* Fade‑in reusable effect */
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(24px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        will-change: opacity, transform;
+      }
+      .fade-in-section.is-visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      /* Timeline */
+      .timeline {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;              /* center horizontally */
+        padding-left: 2.5rem;        /* room for dots & line */
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: var(--timeline-line);
+      }
+      .event {
+        position: relative;
+        padding: 2rem 0 2rem 2rem;    /* space left for dot */
+        text-align: center;           /* center event contents */
+      }
+      .event::before {
+        content: "";
+        position: absolute;
+        left: -30px;                 /* centers dot on 4px line */
+        top: calc(2rem + 0.3rem);
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--timeline-dot);  /* solid color */
+      }
+      .event-date {
+        font-weight: 600;
+        color: #555;
+        margin-bottom: 0.4rem;
+        display: block;
+      }
+      .event p {
+        max-width: 600px;
+        margin: 0.5rem auto 0;       /* center paragraphs */
+      }
+
+      /* Responsive tweak */
+      @media (max-width: 600px) {
+        .timeline { padding-left: 1.8rem; }
+        .event::before { left: -0.5rem; }
+      }
+    </style>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -45,51 +112,126 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <span class="light" style="color:#1f8aff;">Columbia</span> Wushu
+                    <span class="light" style="color:#1f8aff;">Columbia</span> Wushu
                 </a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="page-scroll" href="#about">Our club</a></li>
-                                <li><a class="page-scroll" href="#practices">Practices</a></li>
-                                <li><a class="page-scroll" href="#performances">Performances</a></li>
-                            </ul>
-                        </li>
+                    <li class="hidden"><a href="#page-top"></a></li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Newsletters <span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a href="col2020.html">General Information</a>
-                            </li>
-                            <li>
-                                <a href="http://collegiatewushu.org/tournament/info.php#tournament" target="_blank">Registration</a>
-                            </li>
+                            <li><a class="page-scroll" href="#about">Our club</a></li>
+                            <li><a class="page-scroll" href="#practices">Practices</a></li>
+                            <li><a class="page-scroll" href="#performances">Performances</a></li>
                         </ul>
                     </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="eboard.html">Our Members</a></li>
-                                    <li><a href="contact.html">Email</a></li>
-                                </ul>
-                        </li>
+                    <li class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Newsletters <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="col2020.html">General Information</a></li>
+                            <li><a href="https://collegiatewushu.org/tournament/info.php#tournament" target="_blank">Registration</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="eboard.html">Our Members</a></li>
+                            <li><a href="contact.html">Email</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
 
+    <!-- Hero / Intro -->
+    <header class="fade-in-section" style="text-align:center; padding:30rem 1rem 15rem; background:#000000;">
+        <div class="container">
+            <h1 style="font-size:2.6rem; margin-bottom:1rem;">Spring ’25 Newsletter</h1>
+            <p class="lead" style="max-width:600px; margin:0 auto 1rem;">Honored friends and family, thanks for another semester of <em>kicks, weapons, and dumplings</em>. Enjoy our highlights below and meet us next fall for even more action.</p>
+            <p style="font-style:italic;">With love, <br>the CU Wushu E‑board</p>
+        </div>
+    </header>
 
+    <!-- Timeline Events -->
+    <section class="timeline" id="newsletter-timeline">
+        <div class="event fade-in-section">
+            <span class="event-date">Feb 7 & 10 — LNY Shows</span>
+            <h2>Fordham / NYU Lunar New Year Performances</h2>
+            <p>This February, we performed at the Lunar New Year celebrations of both <strong>NYU</strong> and <strong>Fordham</strong>> University. We had so much fun showcasing our wushu skills to off-campus audiences. Unfortunately, we didn’t manage to get a video of our NYU performance, but our Fordham performance is on our YouTube channel! <a href="https://youtu.be/1zQffWZwDAY?si=eP1UgYXiFEG9CPMB" target="_blank" rel="noopener">Watch the set&nbsp;↗</a></p>
+        </div>
+
+        <div class="event fade-in-section">
+            <span class="event-date">Feb 22 — Showcase</span>
+            <h2>CU Wushu Showcase</h2>
+            <p>This February, we had the pleasure of hosting the first ever Columbia Wushu Performance Showcase! Our friends from Lion Dance, Taiko, Naginata and Goju-Ryu Karate set the stage for our Avatar-inspired performance, pitting the last Earthbender (Jordan) and the Assassin (Embyr) against one another. The club battled as fierce fire warriors, awe-inspiring air nomads, epic earth benders and well-balanced water tribe members. <a href="https://youtu.be/_C_Kc_Coj28?si=UBCFKHofZKu1g9QV" target="_blank" rel="noopener">Watch the finale&nbsp;↗</a></p>
+        </div>
+
+        <div class="event fade-in-section">
+            <span class="event-date">Feb 22 — Social</span>
+            <h2>Dumpling Social</h2>
+            <p>What better way to celebrate our very first showcase than by making dumplings from scratch together? After the Columbia Wushu Performance Showcase, we spent the night watching previous performances, singing Hamilton in blind karaoke, playing Just Dance, and, of course, enjoying a feast of dumplings and wontons. <a href="https://www.instagram.com/p/DGyiNqKh-PK/?img_index=1" target="_blank" rel="noopener">See the photos on our Instagram!&nbsp;↗</a></p>
+        </div>
+
+        <div class="event fade-in-section">
+            <span class="event-date">Apr 26 — Collegiates</span>
+            <h2>Nationals @ UMD</h2>
+            <p>In April we traveled to UMD to compete at collegiates. We had such a great time meeting other teams, reconnecting with alumni, and watching (and getting inspired by) some amazing wushu! This year we had 13 members compete and it was our first time performing two group sets!</p>
+        </div>
+
+        <div class="event fade-in-section">
+            <span class="event-date">May 4 — Banquet</span>
+            <h2>Spring Banquet</h2>
+            <p>Finally, Columbia Wushu ended this academic year off with the annual banquet, a time to both reminisce over the amazing year, wonder in awe at our members’ various unique talents, and celebrate the impact that our club’s seniors have left on the club. Superb vlogging abilities, magic shows, Kpop choreos, and autoCAD weapons were just a fraction of the marvels displayed by-and-for both students and alumni. The banquet wrapped up with paper plates, senior send offs, and catering from Hungarian Pastry and Fumo. <a href="https://www.instagram.com/p/DJe68ihPHQm/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener">Photos are on our Instagram!&nbsp;↗</a></p>
+        </div>
+    </section>
+
+    <!-- Footer (optional existing site footer could be included) -->
+
+    <!-- jQuery & Bootstrap JS (already bundled in main site) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Fade‑in IntersectionObserver -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const faders = document.querySelectorAll('.fade-in-section');
+        const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+        const observer = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          });
+        }, appearOptions);
+        faders.forEach(el => observer.observe(el));
+      });
+    </script>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <small>Copyright &copy; Columbia Wushu 2015</small><br>
+            <small>Built using Twitter Bootstrap with credits to <a href="http://ohho-design.com/">OHHODESIGN</a></small>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script src="js/hovering.js" type="text/javascript"></script>
+
+    <!--  Bootstrap Core JavaScript -->
+  
+  <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
 
 </body>
 
